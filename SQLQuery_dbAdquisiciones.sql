@@ -1186,11 +1186,11 @@ create table tblFuncionarios(idIntFuncionario int NOT NULL,
 --Captura de datos de funcionarios
 
 insert into tblFuncionarios(idIntFuncionario, strRfcFuncionario, strCurpFuncionario, strTratoFuncionario, strNombresFuncionario, strApellidoPaternoFuncionario, strApellidoMaternoFuncionario)values(0, 'VACANTE', 'VACANTE', 'VACANTE','VACANTE', 'VACANTE', 'VACANTE')
-insert into tblFuncionarios(idIntFuncionario, strRfcFuncionario, strCurpFuncionario, strTratoFuncionario, strNombresFuncionario, strApellidoPaternoFuncionario, strApellidoMaternoFuncionario)values(1, 'JUCS491010RY5', 'JUCS', 'MTRA.','SILVIA ESTELA', 'JURADO', 'CUELLAR')
-insert into tblFuncionarios(idIntFuncionario, strRfcFuncionario, strCurpFuncionario, strTratoFuncionario, strNombresFuncionario, strApellidoPaternoFuncionario, strApellidoMaternoFuncionario)values(2, 'UEAA671119MY8', 'UEAA671119HDFRVN01', 'LIC.','ANTONIO ESTANISLAO', 'UREÑA', 'AVALOS')
-insert into tblFuncionarios(idIntFuncionario, strRfcFuncionario, strCurpFuncionario, strTratoFuncionario, strNombresFuncionario, strApellidoPaternoFuncionario, strApellidoMaternoFuncionario)values(3, 'SAMN', 'SAMN', 'ARQ.','NORMA EDITH', 'SALAZAR', 'MARTINEZ')
-insert into tblFuncionarios(idIntFuncionario, strRfcFuncionario, strCurpFuncionario, strTratoFuncionario, strNombresFuncionario, strApellidoPaternoFuncionario, strApellidoMaternoFuncionario)values(4, 'PIBE761012BJ6', 'PIBE761012HDFXRR01', 'LIC.','ERICK GENARO', 'PIÑA ARRIETA', 'BARBOSA')
-insert into tblFuncionarios(idIntFuncionario, strRfcFuncionario, strCurpFuncionario, strTratoFuncionario, strNombresFuncionario, strApellidoPaternoFuncionario, strApellidoMaternoFuncionario)values(5, 'JIMG580805FJ8', 'JIMG', 'LIC.', 'GUILLERMO', 'JIMÉNEZ', 'MARTÍNEZ');
+insert into tblFuncionarios(idIntFuncionario, strRfcFuncionario, strCurpFuncionario, strTratoFuncionario, strNombresFuncionario, strApellidoPaternoFuncionario, strApellidoMaternoFuncionario)values(1, 'J_______', 'JUCS', 'MTRA.','S______', 'J_____', 'C___')
+insert into tblFuncionarios(idIntFuncionario, strRfcFuncionario, strCurpFuncionario, strTratoFuncionario, strNombresFuncionario, strApellidoPaternoFuncionario, strApellidoMaternoFuncionario)values(2, 'U_______', 'UE________', 'LIC.','AN____', 'U____', 'AV____')
+insert into tblFuncionarios(idIntFuncionario, strRfcFuncionario, strCurpFuncionario, strTratoFuncionario, strNombresFuncionario, strApellidoPaternoFuncionario, strApellidoMaternoFuncionario)values(3, 'SAMN', 'SAMN', 'ARQ.','N__________', 'S______', 'M____')
+insert into tblFuncionarios(idIntFuncionario, strRfcFuncionario, strCurpFuncionario, strTratoFuncionario, strNombresFuncionario, strApellidoPaternoFuncionario, strApellidoMaternoFuncionario)values(4, 'PIBE761_____', 'PIB___________', 'LIC.','ERICK GENARO', 'PIÑA ARRIETA', 'BARBOSA')
+insert into tblFuncionarios(idIntFuncionario, strRfcFuncionario, strCurpFuncionario, strTratoFuncionario, strNombresFuncionario, strApellidoPaternoFuncionario, strApellidoMaternoFuncionario)values(5, 'JIM_______', 'JIMG', 'LIC.', 'GU_____', 'JI_____', 'M____');
 
 select * from tblFuncionarios; --OK  --ok local y azure
 
@@ -1443,9 +1443,9 @@ insert into tblDireccionAbastecimiento(idIntDireccionAbastecimiento,
 										strTelefonoAbastecimiento,
 										strEmailAbastecimiento,
 										strNombreContactoAbastecimiento)
-values(1,'AVENIDA FERROCARRIL HIDALGO ', '1129', '', 'CONSTITUCIÓN DE LA REPÚBLICA',
-       '07469', 'ALCALDÍA GUSTAVO A. MADERO', 'CIUDAD DE MÉXICO', '5753-1776 EXT. 206',
-       'omar.castillo@iems.edu.mx', 'LIC. OMAR CABALLERO MARTÍNEZ'); --ok local y azure
+values(1,'AVENID__________ ', '1_____', '', 'CONST________',
+       '00000', 'ALCALDÍA GUSTAVO A. MADERO', 'CIUDAD DE MÉXICO', '5_______ EXT. 206',
+       'o________@iems.edu.mx', 'LIC. O___________'); --ok local y azure
 									   
 select * from tblDireccionAbastecimiento;	
 
@@ -1501,7 +1501,7 @@ insert into tblEntidadContratante(idStrEntidadContratante,
 								  strCorreoEntidad)
 values('36PDIE', 'IEM000401MJ7', 'INSTITUTO DE EDUCACIÓN MEDIA SUPERIOR DE LA CIUDAD DE MÉXICO',
        'AV. DIVISIÓN DEL NORTE', '906', '', 'NARVARTE PONIENTE', '03020', 'ALCALDÍA BENITO JUÁREZ',
-       'CIUDAD DE MÉXICO', '5636-2500 ext. 400', 'direccion_administrativa@iems.edu.mx');	--ok local y azure							  
+       'CIUDAD DE MÉXICO', '5636-2500 ext. 400', '___________@iems.edu.mx');	--ok local y azure							  
 								  
 							  
 create view vwEntidadContratante as								  
@@ -1587,21 +1587,21 @@ insert into tblProveedores(idStrRFCproveedor,
 						   dtmFechaPoderNotarial, 
 						   strNotarioPoderNotarial, 
 						   strNotariaPoderNotarial) 
-values('PRO160304UJ0',
-	   'PRONABYS, S. A. DE C. V.',
-	   'PROVIDENCIA','507','302','DEL VALLE',
+values('PRO___________',
+	   'P______, S. A. DE C. V.',
+	   'P_____','507','302','DEL _______',
 	   '03100','ALCALDÍA BENITO JUÁREZ','CIUDAD DE MÉXICO',
-	   '4605-3662 Y 5543-2318',
-	   'ventas@pronabys.com',
+	   '4_______ Y 5______',
+	   '____@_____.com',
 	   2,
 	   NULL,
-	   'CREDENCIAL INE 8902166H2612317MEX',
-	   '30,868',
+	   'CREDENCIAL INE 00000000000',
+	   '0000000',
 	   '2016-03-04',
-	   'LIC. GUADALUPE GUERRERO GUERRERO',
+	   'LIC. _________',
 	   '160 DE LA CIUDAD DE MÉXICO',
 	   '552735-1',
-	   'COMPRAVENTA, PRODUCCIÓN, DISTRIBUCIÓN,  ELABORACIÓN, FABRICACIÓN, ACONDICIONAMIENTO, DE TODA CLASE DE PRODUCTOS, BIENES Y SERVICIOS','C. LUIS FERNANDO MERINO ROMERO','CREDENCIAL INE 8902166H2612317MEX','30868','2016-03-04','LIC. GUADALUPE GUERRERO GUERRERO','160 DE LA CIUDAD DE MÉXICO');
+	   'COMPRAVENTA, PRODUCCIÓN, DISTRIBUCIÓN,  ELABORACIÓN, FABRICACIÓN, ACONDICIONAMIENTO, DE TODA CLASE DE PRODUCTOS, BIENES Y SERVICIOS','C. LUIS _______','CREDENCIAL INE _______','3____','2016-03-04','LIC. GUA_______','160 DE LA CIUDAD DE MÉXICO');
 
 	   --ok local y azure
 
@@ -1631,8 +1631,8 @@ insert into tblProveedores(idStrRFCproveedor,
 						   dtmFechaPoderNotarial, 
 						   strNotarioPoderNotarial, 
 						   strNotariaPoderNotarial) 
-values( 'BPU7901018D4',
-		'BEBIDAS PURIFICADAS, S. DE R. L. DE C. V.',
+values( 'BPU__________',
+		'BE_________DE C. V.',
 		'RECURSOS HIDRÁULICOS',
 		'8',
 		NULL,
@@ -1640,20 +1640,20 @@ values( 'BPU7901018D4',
 		'54060',
 		'TLALNEPANTLA DE BAZ',
 		'ESTADO DE MÉXICO',
-		'1106-1500 EXT. 1637',
+		'______ ext _____',
 		NULL,
 		2,
 		NULL,
 		NULL,
-		'86,637',
+		'8________',
 		'2019/03/29',
-		'LIC. FRANCISCO TAVALERA AUTRIQUE',
+		'LIC. ____________',
 		'221 DE LA CIUDAD DE MÉXICO',
 		'7806',
 		'PRODUCIR, DISTRIBUIR, COMPRAR, VENDER Y COMERCIAL EN GENERAL CON TODA CLASE DE BEBIDAS GASEOSAS, O SIN GAS,  INCLUYENDO LA PRODUCCIÓN Y EMBOTELLAMIENTO DE JUEGOS DE FRUTAS, ASÍ COMO AGUAS MINERALES Y NATURALES',
-		'ALICIA ROBLES SALGADO',
+		'A___________  paterno Materno',
 		NULL,
-		'83,329',
+		'8,_____',
 		NULL,
 		NULL,
 		NULL
@@ -1846,10 +1846,10 @@ create table tblInstitucionEmisoraGarantia(idStrRFCinstitucionEmisora nvarchar(1
 										   ); --ok local y azure
 										   
 insert into tblInstitucionEmisoraGarantia(idStrRFCinstitucionEmisora, strNombreInstitucionEmisora)
-	values('AAS9207314T7', 'ASEGURADORA ASERTA, S. A. DE C. V.')
+	values('A___________', 'ASEGURADORA ______, S. A. DE C. V.')
 	
 insert into tblInstitucionEmisoraGarantia(idStrRFCinstitucionEmisora, strNombreInstitucionEmisora)
-	values('ASG950531ID1', 'SOFIMEX, INSTITUCIÓN DE GARANTÍAS, S.A.')	
+	values('A___________', '______, INSTITUCIÓN DE GARANTÍAS, S.A.')	
 	
 	
 create view vwInstitucionEmisoraGarantia as
@@ -2010,7 +2010,7 @@ values (1,
 		'2020-02-01',
 		'2020-12-31',
 		'36PDIE',
-		'BPU7901018D4',
+		'B___________',
 		25,
 		5,
 		NULL,
@@ -2666,7 +2666,7 @@ values(1,
 	   1,
 	   1,
 	   2211,
-	   'BPU7901018D4'
+	   'B___________'
 	   );  --ok local y azure
 
 select * from tblPartidasOrdenPago; --ok local y azure
@@ -2826,8 +2826,8 @@ insert into tblProveedores(idStrRFCproveedor,
 						   strNotarioPoderNotarial, 
 						   strNotariaPoderNotarial)
 values(
-		'PDI801117726',
-		'PROMOTORA DINORTE S. A.',
+		'P________',
+		'P_________________',
 		'',
 		'', 
 		'', 
@@ -2842,19 +2842,19 @@ values(
 		'', 
 		'20,549', 
 		'1993-11-23', 
-		'CARLOS ALEJANDRO DURAN LOERA', 
+		'CARLOS _________', 
 		'11 DE LA CIUDAD DE MÉXICO',
 		'032560',
 		'',
-		'SALEJH OURFALI JASQUI ',
-		'INE 4324047805147',
+		'SA____ ________ ',
+		'INE __________',
 		'20,549',
 		'1993-11-23', 
-		'CARLOS ALEJANDRO DURAN LOERA',
+		'CARL______________',
 		'11 DE LA CIUDAD DE MÉXICO');  --ok local y azure
 
 select * from tblProveedores p
-	where p.idStrRFCproveedor like 'PDI801117726';  --ok local y azure
+	where p.idStrRFCproveedor like 'P____________';  --ok local y azure
 	
 --*********************************************************************
 use dbAdquisiciones;
@@ -2894,7 +2894,7 @@ values(
 '2020-01-01',
 '2020-02-29',
 '36PDIE',
-'PDI801117726',
+'P__________',
 26,
 7,
 '', 
@@ -4054,6 +4054,7 @@ select idProgramaPresupuestario, strProgramaPresupuestario
 	from tblProgramaPresupuestario;
 
 select * from vwtblProgramaPresupuestario;  --ok local y azure
+
 
 
 
